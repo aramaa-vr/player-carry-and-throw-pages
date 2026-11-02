@@ -1,0 +1,81 @@
+/* PlayerCarryAndThrow – lightweight, responsive Jekyll theme additions */
+:root{--rose:#b83e72;--ink:#412d42;--muted:#6e5d6d;--line:#efd9e4;--surface:#fff9fc}
+.main-content{line-height:1.85;font-size:16px}
+.main-content h1,.main-content h2,.main-content h3{letter-spacing:-.025em}
+.main-content a{text-underline-offset:3px}
+.main-content a:focus-visible,.btn:focus-visible{outline:3px solid #b83e72;outline-offset:3px;border-radius:5px}
+.main-content img{height:auto;max-width:100%}
+.main-content table{display:block;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.main-content table th{white-space:nowrap}
+.hero{position:relative;overflow:hidden;background:linear-gradient(115deg,#fff6fa,#f7f4ff 52%,#effbf6);border:1px solid var(--line);border-radius:23px;padding:clamp(1.2rem,4vw,2.35rem);margin:1rem 0 1.5rem}
+.hero:after{content:'✦';position:absolute;right:4%;top:0;color:#eebbd5;font-size:4.5rem;opacity:.65;pointer-events:none}
+.hero__inner{position:relative;display:grid;grid-template-columns:1.25fr .8fr;align-items:center;gap:1rem;z-index:1}
+.hero__eyebrow{color:#a43d6d;font-size:.78rem;letter-spacing:.07em;font-weight:800}
+.hero h1{font-size:clamp(1.65rem,3.2vw,2.45rem);line-height:1.32;margin:.6rem 0 .8rem;color:#70345a}
+.hero p{color:#5a4a58;margin:0;font-size:1.02rem}
+.hero__art{position:relative;display:flex;justify-content:center;align-items:center;gap:0}
+.hero__art img{width:42%;margin:0 !important;border:0!important;background:transparent!important;box-shadow:none!important;object-fit:contain}
+.hero__art img:nth-child(2){margin-left:-17%!important;margin-top:22%!important;z-index:2}
+.hero__art img:nth-child(3){margin-left:-12%!important;margin-top:-15%!important}
+.action-row{display:flex;flex-wrap:wrap;gap:.7rem;margin:1.4rem 0 0}
+.action-row a{display:inline-flex;align-items:center;justify-content:center;padding:.7rem 1.2rem;border-radius:999px;border:1px solid #e6a6c2;text-decoration:none;font-weight:750;background:white;color:#934266}
+.action-row a:hover{border-color:#b83e72}
+.action-row .primary{color:#fff;background:#ad4478;border-color:#ad4478}
+.action-row .primary:hover{background:#933462}
+.tiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1rem 0 2rem}
+.tile{border:1px solid var(--line);border-radius:18px;background:#fffafd;padding:1.2rem;display:flex;flex-direction:column;gap:.35rem}
+.tile img{width:100%;height:150px;object-fit:contain;margin:.2rem 0 .3rem!important;border:0!important;box-shadow:none!important;background:none!important}
+.tile h3{font-size:1.05rem;margin:.15rem 0}.tile p{margin:0;font-size:.91rem;color:var(--muted)}
+.tile a{font-weight:700}
+.note{border-left:4px solid #bc6c99;background:#fff7fb;padding:1rem 1.2rem;border-radius:0 12px 12px 0;margin:1.4rem 0}
+.notice{border:1px solid #ecd3a1;background:#fffdf6;border-radius:12px;padding:.9rem 1.1rem;margin:1rem 0}
+.steps{counter-reset:step;list-style:none;padding:0!important;margin:1rem 0 2rem}
+.steps li{counter-increment:step;position:relative;padding:.9rem 1rem .9rem 3.25rem;border:1px solid var(--line);border-radius:12px;margin-bottom:.75rem;background:#fffafb}
+.steps li:before{content:counter(step);position:absolute;top:.8rem;left:.9rem;width:1.7rem;height:1.7rem;border-radius:50%;background:#a84d77;color:#fff;text-align:center;line-height:1.7rem;font-weight:800}
+.guide-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin:1.25rem 0}
+.guide{padding:1rem;text-align:center;border:1px solid var(--line);border-radius:15px;background:linear-gradient(#fff,#fff8fb)}
+.guide img{height:160px;width:100%;object-fit:contain;border:0!important;box-shadow:none!important;background:transparent!important;margin:0!important}
+.guide b{display:block;margin:.3rem 0}.guide small{display:block;color:var(--muted);font-size:.88rem}
+.pill{display:inline-flex;align-items:center;background:#ffebf4;border-radius:999px;color:#8d3d65;font-size:.83rem;font-weight:700;padding:.2rem .65rem;margin-right:.2rem}
+.source{font-size:.85rem;color:#615766;border-top:1px solid #efdee6;padding-top:.85rem;margin-top:2.2rem}
+@media(max-width:850px){.tiles{grid-template-columns:1fr 1fr}.hero__inner{grid-template-columns:1fr}.hero__art{max-width:470px;margin:0 auto}.guide-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:500px){.tiles,.guide-grid{grid-template-columns:1fr}.hero__art{max-width:330px}.action-row a{width:100%}.tile img{height:145px}.hero{border-radius:16px}}
+@media(prefers-color-scheme:dark){.hero{background:linear-gradient(120deg,#332039,#272739,#193436);border-color:#664659}.hero h1,.hero p{color:#fff3fa}.hero__eyebrow{color:#f5bbd5}.tile,.guide,.steps li{background:#271c2a;border-color:#6e4d61}.tile p,.guide small{color:#d5bed0}.note{background:#392738;color:#f5edf2}.notice{background:#3b3020;color:#f9edcf}.action-row a{background:#35273a;color:#ffe5f1}.action-row .primary{background:#a84d77;color:#fff}.pill{background:#56304a;color:#ffdfec}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+
+/* Simplified documentation: compact mode illustrations */
+.mode-row{display:flex;align-items:center;gap:1.2rem;padding:1rem 0;border-bottom:1px solid var(--line)}
+.mode-row img{flex:0 0 110px;width:110px;height:105px;object-fit:contain;margin:0!important;border:none!important;box-shadow:none!important;background:transparent!important}
+.mode-row h3{margin:0 0 .2rem;font-size:1.1rem}
+.mode-row p{margin:.25rem 0;color:var(--muted)}
+.guide-grid.two-columns{grid-template-columns:repeat(2,minmax(0,1fr))}
+.legal-links{font-size:.91rem;color:var(--muted);margin-top:2.5rem}
+@media(max-width:600px){.guide-grid.two-columns{grid-template-columns:1fr}.mode-row{align-items:flex-start;gap:.65rem}.mode-row img{flex-basis:85px;width:85px;height:88px}}
+
+/* Installation: keep the Unity menu screenshot readable and easy to open at full size. */
+.install-menu-shot{margin:.9rem 0 .25rem;max-width:100%}
+.install-menu-shot a{display:block;width:100%;line-height:0;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#fff}
+.install-menu-shot img{display:block;width:100%;height:auto;max-width:975px;margin:0!important;border:0!important;border-radius:0!important;box-shadow:none!important;background:#fff!important}
+.install-menu-shot figcaption{color:var(--muted);font-size:.84rem;line-height:1.5;margin:.35rem 0 0}
+
+/* TMP Importer screenshot: display at the original resolution and shrink on mobile. */
+.install-menu-shot.install-tmp-shot{max-width:649px}
+.install-menu-shot.install-tmp-shot img{max-width:649px}
+.step-hint{font-size:.9rem;color:var(--muted)}
+
+/* Mode screenshots: keep the original UI legible at its full aspect ratio. */
+.mode-guide{margin:1.15rem 0 2rem;padding:1.1rem clamp(.8rem,2.5vw,1.4rem);border:1px solid var(--line);background:var(--surface);border-radius:16px}
+.mode-guide h3{margin:0 0 .35rem;color:#963e69}
+.mode-guide p{margin:.2rem 0 .85rem}
+.mode-guide figure{margin:0}
+.mode-guide figure a{display:block;line-height:0;border-radius:11px;overflow:hidden;border:1px solid var(--line);background:#fff}
+.mode-guide figure a:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.mode-guide figure img{display:block;width:100%;height:auto;aspect-ratio:4 / 3;margin:0!important;max-width:none;object-fit:contain;box-shadow:none!important;border:0!important;border-radius:0!important;background:#f2eff4!important}
+.mode-guide figcaption{text-align:center;font-size:.86rem;color:var(--muted);margin:.48rem 0 0;line-height:1.5}
+@media(max-width:600px){.mode-guide{padding:.75rem;margin:1rem 0 1.5rem;border-radius:12px}.mode-guide h3{font-size:1.07rem}}
+@media(prefers-color-scheme:dark){.mode-guide{background:#2b202c;border-color:#6e4d61}.mode-guide h3{color:#f2b9d6}.mode-guide figcaption{color:#d5bed0}}
+
+/* VCC package search screenshot: maintain correct aspect and allow click-to-enlarge. */
+.install-menu-shot.install-vcc-shot{max-width:1172px}
+.install-menu-shot.install-vcc-shot img{max-width:1172px}
+.install-vcc-shot a:focus-visible{outline:3px solid var(--rose);outline-offset:3px}

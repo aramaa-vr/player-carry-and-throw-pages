@@ -1,0 +1,15 @@
+title: "だこちてギミック【ワールド版】"
+description: "VRChatワールド用ギミックの導入方法と遊び方"
+url: "https://aramaa-vr.github.io"
+baseurl: "/player-carry-and-throw-pages"
+remote_theme: just-the-docs/just-the-docs
+plugins:
+  - jekyll-remote-theme
+search_enabled: false
+lang: "ja-JP"
+locale: "ja_JP"
+permalink: pretty
+color_scheme: light
+aux_links:
+  "VCCで追加": "https://aramaa-vr.github.io/vpm-repos/redirect.html"
+footer_content: '© あらまあ素敵なショップ · <a href="https://github.com/aramaa-vr/player-carry-and-throw/blob/master/LICENSE.md">利用規約（ライセンス）</a>'
