@@ -51,7 +51,7 @@ permalink: /install/
 | **投げ合い** | 抱っこ → 離すと投げる |
 | **カスタム** | ワールド制作者が動作を調整する |
 
-<div class="note">**配置は1 Sceneにつき1つだけ。** 主要3モードは初期設定済みです。ワールドに既存の <code>EventSystem</code> がない場合は1つ用意してください。</div>
+<div class="note"><strong>配置は1 Sceneにつき1つだけ。</strong> 主要3モードは初期設定済みです。ワールドに既存の <code>EventSystem</code> がない場合は1つ用意してください。</div>
 
 ### Prefabから直接配置する場合
 

@@ -40,7 +40,6 @@
 .source{font-size:.85rem;color:#615766;border-top:1px solid #efdee6;padding-top:.85rem;margin-top:2.2rem}
 @media(max-width:850px){.tiles{grid-template-columns:1fr 1fr}.hero__inner{grid-template-columns:1fr}.hero__art{max-width:470px;margin:0 auto}.guide-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:500px){.tiles,.guide-grid{grid-template-columns:1fr}.hero__art{max-width:330px}.action-row a{width:100%}.tile img{height:145px}.hero{border-radius:16px}}
-@media(prefers-color-scheme:dark){.hero{background:linear-gradient(120deg,#332039,#272739,#193436);border-color:#664659}.hero h1,.hero p{color:#fff3fa}.hero__eyebrow{color:#f5bbd5}.tile,.guide,.steps li{background:#271c2a;border-color:#6e4d61}.tile p,.guide small{color:#d5bed0}.note{background:#392738;color:#f5edf2}.notice{background:#3b3020;color:#f9edcf}.action-row a{background:#35273a;color:#ffe5f1}.action-row .primary{background:#a84d77;color:#fff}.pill{background:#56304a;color:#ffdfec}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 
 /* Simplified documentation: compact mode illustrations */
@@ -73,7 +72,6 @@
 .mode-guide figure img{display:block;width:100%;height:auto;aspect-ratio:4 / 3;margin:0!important;max-width:none;object-fit:contain;box-shadow:none!important;border:0!important;border-radius:0!important;background:#f2eff4!important}
 .mode-guide figcaption{text-align:center;font-size:.86rem;color:var(--muted);margin:.48rem 0 0;line-height:1.5}
 @media(max-width:600px){.mode-guide{padding:.75rem;margin:1rem 0 1.5rem;border-radius:12px}.mode-guide h3{font-size:1.07rem}}
-@media(prefers-color-scheme:dark){.mode-guide{background:#2b202c;border-color:#6e4d61}.mode-guide h3{color:#f2b9d6}.mode-guide figcaption{color:#d5bed0}}
 
 /* VCC package search screenshot: maintain correct aspect and allow click-to-enlarge. */
 .install-menu-shot.install-vcc-shot{max-width:1172px}
