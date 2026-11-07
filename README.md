@@ -5,7 +5,6 @@ GitHub Pages / Jekyll（just-the-docs）で公開する説明ページです。�
 ## 説明ページに使う画像
 
 - `docs/assets/img/vcc-manage-packages.webp` — VCCでパッケージ名を検索し、右端の「＋」で追加する画面
-- `docs/assets/img/unity-placement-menu.webp` — Unityのモード配置メニュー
 - `docs/assets/img/tmp-importer.webp` — TMP Essentialsの導入
 - `docs/assets/img/mode-dako.webp` — だこちてモードの遊び方
 - `docs/assets/img/mode-gymnastics.webp` — 組体操モードの遊び方
@@ -39,7 +38,7 @@ bundle exec jekyll serve --baseurl=""
 
 ## 仕様の参照元
 
-ユーザー提供のPlayerCarryAndThrowプロジェクト内の以下の一次資料を参照しています。
+ユーザー提供のだこちてギミック【ワールド版】プロジェクト内の以下の一次資料を参照しています。
 
 - `Packages/jp.aramaa.player-carry-and-throw/Documentation~/Installation.md`
 - `Packages/jp.aramaa.player-carry-and-throw/Documentation~/ProductionSpec.md`

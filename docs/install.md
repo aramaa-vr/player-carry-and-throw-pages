@@ -22,13 +22,7 @@ permalink: /install/
     </figure>
     <span class="step-hint">見つからない場合は、VCCへの配布リポジトリ登録と「Selected Repos」の選択を確認してください。</span>
   </li>
-  <li><strong>Unityにギミックを配置する</strong><br>追加が完了したらVCCの <strong>Open Project</strong> からUnityを開きます。<br>Unity上部の <code>Tools → Aramaa → だこちてギミック[ワールド版]</code> を開き、目的のモードの「〜モードをワールドに配置」を選びます。<strong>配置するモードは1つだけ</strong>です。
-    <figure class="install-menu-shot">
-      <a href="{{ '/assets/img/unity-placement-menu.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="Unityの配置メニュー画像を拡大表示">
-        <img src="{{ '/assets/img/unity-placement-menu.webp' | relative_url }}" alt="UnityのToolsからAramaa、だこちてギミック[ワールド版]を開き、だこちて・投げ合い・組体操・カスタムのモードを選んでワールドに配置するメニュー" loading="lazy" width="975" height="146">
-      </a>
-      <figcaption>Unityの配置メニュー（画像をクリックすると拡大できます）</figcaption>
-    </figure>
+  <li><strong>Unityにギミックを配置する</strong><br>追加が完了したらVCCの <strong>Open Project</strong> からUnityを開きます。<br>Unity上部の <code>Tools → Aramaa → だこちてギミック【ワールド版】</code> を開き、目的のモードの「〜モードをワールドに配置」を選びます。<strong>配置するモードは1つだけ</strong>です。
   </li>
   <li><strong>「TMP Importer」が表示された場合は初期設定する</strong><br>これはエラーではありません。上段の <strong>Import TMP Essentials</strong> をクリックし、読み込みが終わったらウィンドウを閉じてください。下段の <strong>Import TMP Examples &amp; Extras</strong> は、このギミックを使うためには必要ありません。
     <figure class="install-menu-shot install-tmp-shot">
@@ -60,6 +54,6 @@ permalink: /install/
 - だこちて：<code>PlayerCarryAndThrow_Dako.prefab</code>
 - 組体操：<code>PlayerCarryAndThrow_Gymnastics.prefab</code>
 - 投げ合い：<code>PlayerCarryAndThrow_Battle.prefab</code>
-- カスタム：<code>PlayerCarryAndThrow.prefab</code>
+- カスタム：<code>PlayerCarryAndThrow_Custom.prefab</code>
 
 <div class="action-row"><a class="primary" href="{{ '/play/' | relative_url }}">遊び方へ進む</a></div>
