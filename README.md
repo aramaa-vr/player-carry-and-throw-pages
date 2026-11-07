@@ -2,15 +2,18 @@
 
 GitHub Pages / Jekyll（just-the-docs）で公開する説明ページです。閲覧者向けの内容は「トップ」「ワールドへの導入」「遊び方」の3ページのみです。「遊び方」には各モードのUI画像3枚を掲載しています。
 
+導入・遊び方の各ページにはDiscordの問い合わせ案内を掲載し、トップからも移動できます。案内の共通部分は `docs/_includes/contact.html` で管理します。
+
 ## 説明ページに使う画像
 
 - `docs/assets/img/vcc-manage-packages.webp` — VCCでパッケージ名を検索し、右端の「＋」で追加する画面
+- `docs/assets/img/discord-contact.webp` — Discordの問い合わせチャンネル（ユーザー提供画像）
 - `docs/assets/img/tmp-importer.webp` — TMP Essentialsの導入
 - `docs/assets/img/mode-dako.webp` — だこちてモードの遊び方
 - `docs/assets/img/mode-gymnastics.webp` — 組体操モードの遊び方
 - `docs/assets/img/mode-battle.webp` — 投げ合いモードの遊び方
 
-添付スクリーンショットと操作UI画像を、画質を保持した可逆圧縮のWebP形式で収録しています。画像は説明ページから拡大できます。
+操作UI画像は現行PrefabをUnityで描画し、可逆圧縮のWebP形式で収録しています。VCCの導入案内とTMP Importerの案内はスクリーンショットです。画像は説明ページから拡大できます。
 
 ## 公開方法
 

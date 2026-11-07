@@ -25,7 +25,7 @@ permalink: /
   </div>
 </div>
 
-## 遊べる3つのモード
+## 配置するだけで遊べる3つのモード
 
 <div class="tiles">
   <div class="tile">
@@ -45,8 +45,14 @@ permalink: /
   </div>
 </div>
 
+細かく動作を調整したい制作者向けに、カスタムモードも用意しています。主要3モードを含め、本体は1シーンにつき1つ配置します。
+
 <div class="note"><strong>遊ぶときは相手の同意を大切に。</strong> 抱っこする・抱っこされる許可は、ワールド内の個人UIから変更できます。</div>
 
 <div class="action-row"><a href="{{ '/play/' | relative_url }}">操作方法を確認する</a></div>
+
+<p>制作：あらまあ ／ あらまあ素敵なショップ</p>
+
+<div class="action-row"><a href="{{ '/install/#contact' | relative_url }}">不具合・不明点のお問い合わせ</a></div>
 
 <p class="legal-links"><a href="https://github.com/aramaa-vr/player-carry-and-throw/blob/master/LICENSE.md">利用規約（ライセンス）</a></p>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1172" height="330" viewBox="0 0 1172 330" role="img" aria-labelledby="title desc">
+<title id="title">VCCでだこちてギミック【ワールド版】を追加する手順</title>
+<desc id="desc">配布リポジトリを登録し、WorldsプロジェクトのManage Projectを開き、Manage Packagesで商品名を検索して＋ボタンで追加します。</desc>
+<rect width="1172" height="330" rx="24" fill="#fff8f1"/>
+<g font-family="'Noto Sans JP','Yu Gothic',Meiryo,sans-serif" fill="#493b46">
+<text x="32" y="47" font-size="25" font-weight="700" fill="#ac3460">VCCで追加する手順</text>
+<text x="32" y="80" font-size="17">事前に配布リポジトリを登録してください。</text>
+<rect x="24" y="106" width="258" height="192" rx="18" fill="white"/>
+<rect x="298" y="106" width="552" height="192" rx="18" fill="white"/>
+<rect x="866" y="106" width="282" height="192" rx="18" fill="white"/>
+<g fill="#ac3460"><circle cx="55" cy="140" r="18"/><circle cx="329" cy="140" r="18"/><circle cx="897" cy="140" r="18"/></g>
+<g fill="white" font-size="21" text-anchor="middle" font-weight="700"><text x="55" y="147">1</text><text x="329" y="147">2</text><text x="897" y="147">3</text></g>
+<g font-size="21" font-weight="700"><text x="84" y="147">プロジェクトを選ぶ</text><text x="358" y="147">商品名で検索する</text><text x="926" y="147">「＋」で追加</text></g>
+<text x="44" y="194" font-size="18">Worldsプロジェクトの</text><text x="44" y="225" font-size="19" font-weight="700">Manage Project</text><text x="44" y="265" font-size="17">（プロジェクト管理）</text>
+<text x="318" y="188" font-size="18">Manage Packages（パッケージ管理）</text>
+<rect x="318" y="207" width="512" height="51" rx="10" fill="#fbe5ee"/>
+<text x="336" y="240" font-size="24" font-weight="700">だこちてギミック【ワールド版】</text>
+<text x="318" y="282" font-size="16">見つからない場合は、選択中のリポジトリを確認。</text>
+<text x="886" y="194" font-size="18">同名のパッケージの</text><text x="886" y="225" font-size="18">行の右端を選びます。</text>
+<circle cx="1007" cy="263" r="21" fill="#ac3460"/><path d="M996 263h22m-11-11v22" stroke="white" stroke-width="3"/>
+</g></svg>
