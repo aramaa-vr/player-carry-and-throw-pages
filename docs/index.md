@@ -22,6 +22,7 @@ permalink: /
       <div class="action-row">
         <a class="primary" href="{{ '/install/' | relative_url }}">ワールドに導入する</a>
         <a href="{{ '/play/' | relative_url }}">遊び方を見る</a>
+        <a href="{{ '/contact/' | relative_url }}">不具合・不明点のお問い合わせ</a>
       </div>
   </div>
 </div>
@@ -50,10 +51,6 @@ permalink: /
 
 <div class="note"><strong>遊ぶときは相手の同意を大切に。</strong> 抱っこする・抱っこされる許可は、ワールド内の個人UIから変更できます。</div>
 
-<div class="action-row"><a href="{{ '/play/' | relative_url }}">操作方法を確認する</a></div>
-
 <p>制作：あらまあ ／ あらまあ素敵なショップ</p>
-
-<div class="action-row"><a href="{{ '/install/#contact' | relative_url }}">不具合・不明点のお問い合わせ</a></div>
 
 <p class="legal-links"><a href="https://github.com/aramaa-vr/player-carry-and-throw/blob/master/LICENSE.md">利用規約（ライセンス）</a></p>

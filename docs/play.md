@@ -79,6 +79,4 @@ permalink: /play/
 
 <div class="note"><strong>遊ぶときは相手の同意を大切に。</strong> 許可スイッチだけでなく、その場での相手の意思も確認してください。</div>
 
-{% include contact.html %}
-
-<div class="action-row"><a href="{{ '/install/' | relative_url }}">ワールドへの導入方法</a><a href="{{ '/' | relative_url }}">トップへ戻る</a></div>
+<div class="action-row" id="contact"><a href="{{ '/install/' | relative_url }}">ワールドへの導入方法</a><a href="{{ '/contact/' | relative_url }}">不具合・不明点のお問い合わせ</a><a href="{{ '/' | relative_url }}">トップへ戻る</a></div>

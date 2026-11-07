@@ -1,13 +1,17 @@
 # だこちてギミック【ワールド版】説明サイト
 
-GitHub Pages / Jekyll（just-the-docs）で公開する説明ページです。閲覧者向けの内容は「トップ」「ワールドへの導入」「遊び方」の3ページのみです。「遊び方」には各モードのUI画像3枚を掲載しています。
+GitHub Pages / Jekyll（just-the-docs）で公開する説明ページです。閲覧者向けの内容は「トップ」「ワールドへの導入」「遊び方」「不具合・不明点のお問い合わせ」の4ページです。「遊び方」には各モードのUI画像3枚を掲載しています。
 
-導入・遊び方の各ページにはDiscordの問い合わせ案内を掲載し、トップからも移動できます。案内の共通部分は `docs/_includes/contact.html` で管理します。
+Discordの問い合わせ方法と報告時に添える情報・案内画像は、独立した `docs/contact.md`（`/contact/`）にまとめています。トップ上部のボタン、導入・遊び方の各ページ、ナビゲーションから移動できます。従来の導入・遊び方ページ内の `#contact` には、新しいページへのリンクを残しています。
 
 ## 説明ページに使う画像
 
+- `docs/assets/img/vcc-manage-packages.webp` — VCCでパッケージを検索し、右端の「＋」で追加する画面（ユーザー提供の新しいPNGを可逆WebPに変換）
 - `docs/assets/img/manual-title*.webp` — トップのタイトル画像（ユーザー提供画像）。幅640・960・1280・1672pxのWebPを用意し、画面幅と画面の精細さに合わせて読み分けます。縦横比を保って全体を表示し、読み込み領域をあらかじめ確保します。
-- `docs/assets/img/vcc-manage-packages.webp` — VCCでパッケージ名を検索し、右端の「＋」で追加する画面
+- `docs/assets/img/vcc-add-repo.webp` — ブラウザーからVCCを開く確認画面（ユーザー提供画像）
+- `docs/assets/img/vcc-add-repository-confirm.webp` — 配布リポジトリ登録の確認画面（ユーザー提供PNGを可逆WebPに変換）
+- `docs/assets/img/vcc-settings-repo-added-q75.webp` — リポジトリ追加済みのメッセージ（ユーザー提供画像）。ページ上では警告までを表示し、元画像の不正確な「すでにプロジェクトに入っています」という注記は表示しません。
+- `docs/assets/img/vcc-repository-enabled.webp` — 配布リポジトリのチェック状態（ユーザー提供PNGを可逆WebPに変換）
 - `docs/assets/img/discord-contact.webp` — Discordの問い合わせチャンネル（ユーザー提供画像）
 - `docs/assets/img/tmp-importer.webp` — TMP Essentialsの導入
 - `docs/assets/img/mode-dako.webp` — だこちてモードの遊び方

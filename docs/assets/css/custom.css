@@ -73,8 +73,15 @@
 .install-menu-shot.install-vcc-shot img{max-width:1172px}
 .install-vcc-shot a:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
 
+/* Show the repository warning without the source image's inaccurate project annotation. */
+.install-repo-status{margin:1rem 0;padding:.8rem;border:1px solid var(--line);border-radius:10px;background:#fff}
+.install-repo-status summary{cursor:pointer;font-weight:700;line-height:1.6}
+.install-repo-status summary:focus-visible{outline:3px solid var(--rose);outline-offset:3px}
+.install-repo-status-window{aspect-ratio:969 / 325;overflow:hidden;border:1px solid var(--line);border-radius:10px;background:#fff}
+.install-repo-status-window img{max-width:none}
+@media(max-width:600px){.steps li{padding-right:.75rem;padding-left:2.7rem}.steps li:before{left:.6rem}.steps code{overflow-wrap:anywhere}}
+
 /* Contact guide: preserve the supplied screenshot at its native size. */
-.contact-section{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line)}
 .contact-guide{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,322px);gap:1.5rem;align-items:start}
 .contact-shot{margin:1rem 0;max-width:322px}
 .contact-shot a{display:block;line-height:0}

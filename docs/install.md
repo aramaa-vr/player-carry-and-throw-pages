@@ -13,17 +13,64 @@ permalink: /install/
 
 追加・更新前にプロジェクトをバックアップしてください。Unity 2022.3のVRChat Worldsプロジェクトを使用します。必要なパッケージはWorlds SDK（3.10.5以上・4.0.0未満）、TextMesh Pro 3.0.6、uGUI 1.0.0です。
 
+## VCCでパッケージを追加する
+
+**配布リポジトリの登録はVCC全体で1回、パッケージの追加はワールドのプロジェクトごとに必要です。** すでにリポジトリを登録している方は手順2へ、対象プロジェクトにパッケージを追加済みの方は[Unityでの配置](#unity-setup)へ進んでください。
+
+<p class="step-hint">画面の表記はVCC・ブラウザーの言語やバージョンによって異なります。画像はクリックすると拡大できます（追加済みメッセージの画像を除く）。</p>
+
 <ol class="steps">
-  <li><strong>VCCでワールドのプロジェクトを選ぶ</strong><br>VRChat Creator Companion（VCC）を開き、ギミックを導入するワールドの <strong>Manage Project</strong> を選びます。<span class="step-hint">配布リポジトリをまだ登録していない場合は、先に<a href="https://aramaa-vr.github.io/vpm-repos/redirect.html">VCCへ登録</a>してください。</span></li>
-  <li><strong>「だこちてギミック【ワールド版】」を追加する</strong><br><strong>Manage Packages</strong> の検索欄に <strong>「だこちてギミック【ワールド版】」</strong> と入力します。検索結果に表示された同名のパッケージの<strong>右端の「＋」ボタン</strong>を押して追加してください。
+  <li><strong>配布リポジトリをVCCに登録する（初回のみ）</strong><br><a href="https://aramaa-vr.github.io/vpm-repos/redirect.html">VCCへ登録</a>を開き、ブラウザーで確認が出たら <strong>CreatorCompanion を開く</strong> を選びます。
+    <figure class="install-menu-shot install-vcc-shot">
+      <a href="{{ '/assets/img/vcc-add-repo.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="ブラウザーからVCCを開く確認画面を拡大表示">
+        <img src="{{ '/assets/img/vcc-add-repo.webp' | relative_url }}" alt="ブラウザーの確認画面。CreatorCompanion を開くボタンからVCCを起動する。" loading="lazy" decoding="async" width="1094" height="330">
+      </a>
+      <figcaption>「CreatorCompanion を開く」を選ぶと、VCCに移動します。</figcaption>
+    </figure>
+    <p>VCCの <strong>Add Repository</strong> で、配布元が <strong>あらまあ素敵なショップ</strong>、URLが <code>https://aramaa-vr.github.io/vpm-repos/vpm.json</code> であることを確認します。注意事項を読んで、<strong>I Understand, Add Repository</strong> を押してください。</p>
+    <figure class="install-menu-shot install-vcc-shot">
+      <a href="{{ '/assets/img/vcc-add-repository-confirm.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="VCCのリポジトリ登録確認画面を拡大表示">
+        <img src="{{ '/assets/img/vcc-add-repository-confirm.webp' | relative_url }}" alt="VCCのAdd Repository画面。あらまあ素敵なショップのURLと、Included Packagesにだこちてギミック【ワールド版】があることを確認し、I Understand, Add Repositoryを押す。" loading="lazy" decoding="async" width="1177" height="601">
+      </a>
+      <figcaption>ここでは配布元を登録します。ワールドのプロジェクトへの追加は手順3で行います。</figcaption>
+    </figure>
+    <details class="install-repo-status">
+      <summary>「You have already added this repository.」と表示された場合</summary>
+      <p><strong>配布リポジトリは登録済みです。</strong> 再登録は不要なので、入力欄の <strong>Cancel</strong> で閉じ、手順2へ進んでください。このメッセージだけでは、対象プロジェクトにパッケージが入っているかは分かりません。</p>
+      <figure class="install-menu-shot">
+        <div class="install-repo-status-window">
+          <img src="{{ '/assets/img/vcc-settings-repo-added-q75.webp' | relative_url }}" alt="VCCのリポジトリ登録欄に、You have already added this repository. You can't add it again. と表示されている。" loading="lazy" decoding="async" width="969" height="603">
+        </div>
+        <figcaption>「このリポジトリは追加済みで、再追加できません」という意味です。登録済みの配布元を削除し直す必要はありません。</figcaption>
+      </figure>
+    </details>
+    <p class="step-hint">VCCが開かない場合は、VCCの <strong>Settings → Packages → Add Repository</strong> に上記URLを貼り付け、<strong>Add</strong> を押して登録できます。</p>
+  </li>
+  <li><strong>配布リポジトリにチェックが入っていることを確認する</strong><br>VCCの <strong>Settings → Packages → Installed Repositories</strong> で、<strong>あらまあ素敵なショップ</strong> にチェックを入れます。登録済みでも、チェックが外れているとパッケージの一覧に表示されません。
+    <figure class="install-menu-shot install-vcc-shot">
+      <a href="{{ '/assets/img/vcc-repository-enabled.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="VCCの配布リポジトリのチェック状態を拡大表示">
+        <img src="{{ '/assets/img/vcc-repository-enabled.webp' | relative_url }}" alt="VCCのInstalled Repositories一覧。あらまあ素敵なショップの左側にチェックが入っている。" loading="lazy" decoding="async" width="1174" height="602">
+      </a>
+      <figcaption>「あらまあ素敵なショップ」の左側にチェックがあれば、配布元の準備は完了です。</figcaption>
+    </figure>
+  </li>
+  <li><strong>ワールドのプロジェクトを選び、パッケージを追加する</strong><br>VCCの <strong>Projects</strong> に戻り、導入するワールドの <strong>Manage Project</strong> を開きます。<strong>Manage Packages</strong> の検索欄に <strong>「だこちてギミック【ワールド版】」</strong> と入力し、同名のパッケージを探してください。<strong>Installed Version</strong> が <strong>Not Installed</strong> の場合は、<strong>右端の「＋」ボタン</strong>を押して追加します。追加確認が表示されたら、内容を確認して進めてください。
     <figure class="install-menu-shot install-vcc-shot">
       <a href="{{ '/assets/img/vcc-manage-packages.webp' | relative_url }}" target="_blank" rel="noopener noreferrer" aria-label="VCCの検索と追加ボタンの画像を拡大表示">
-        <img src="{{ '/assets/img/vcc-manage-packages.webp' | relative_url }}" alt="VCCのManage Packages画面。検索欄にだこちてギミック【ワールド版】を入力し、検索結果の右端にある＋ボタンを押して追加する。" loading="lazy" decoding="async" width="1172" height="260">
+        <img src="{{ '/assets/img/vcc-manage-packages.webp' | relative_url }}" alt="VCCのManage Packages画面。だこちてギミック【ワールド版】のInstalled VersionはNot Installedと表示され、右端に追加用の＋ボタンがある。" loading="lazy" decoding="async" width="1146" height="263">
       </a>
-      <figcaption>パッケージ名で検索し、右端の「＋」から追加します。画面の表記はVCCの言語・バージョンによって異なります（画像をクリックすると拡大できます）。</figcaption>
+      <figcaption>「Not Installed」は、このプロジェクトには未導入という意味です。右端の「＋」から追加します。画像はクリックすると拡大できます。</figcaption>
     </figure>
-    <span class="step-hint">見つからない場合は、VCCへの配布リポジトリ登録と「Selected Repos」の選択を確認してください。</span>
+    <p><strong>すでにインストール済みの場合：</strong> <strong>Installed Version</strong> にバージョン番号が表示されていれば、そのプロジェクトへの追加は完了しています。Unityでの配置へ進んでください。更新したい場合は、先に<a href="#package-update">更新・削除するとき</a>を確認します。</p>
+    <span class="step-hint">見つからない場合は、手順2のチェックと、Manage Packagesの <strong>Selected Repos</strong> に配布元が含まれているかを確認してください。別のプロジェクトに導入済みでも、今回のプロジェクトには追加が必要です。</span>
   </li>
+</ol>
+
+<h2 id="unity-setup">Unityでギミックを配置する</h2>
+
+すでにシーンにギミックを配置している場合は、本体を追加せず、既存の配置と動作を確認してください。更新する場合は[更新・削除するとき](#package-update)へ進みます。
+
+<ol class="steps">
   <li><strong>Unityにギミックを配置する</strong><br>追加が完了したらVCCの <strong>Open Project</strong> からUnityを開きます。<br>Unity上部の <code>Tools → Aramaa → だこちてギミック【ワールド版】</code> を開き、目的のモードの「〜モードをワールドに配置」を選びます。<strong>配置するモードは1つだけ</strong>です。
   </li>
   <li><strong>「TMP Importer」が表示された場合は初期設定する</strong><br>これはエラーではありません。上段の <strong>Import TMP Essentials</strong> をクリックし、読み込みが終わったらウィンドウを閉じてください。下段の <strong>Import TMP Examples &amp; Extras</strong> は、このギミックを使うためには必要ありません。
@@ -74,9 +121,9 @@ permalink: /install/
 
 共通ベースの `PlayerCarryAndThrow_Base.prefab` やUI部品を、導入用の本体として直接配置しないでください。
 
-## 更新・削除するとき
+<h2 id="package-update">更新・削除するとき</h2>
 
-更新前に、配置位置・Inspectorで変更した設定・外部スクリプトからの参照を控え、プロジェクトをバックアップします。VCCで更新した後は、ワールド内の表示と操作を再確認してください。
+更新前に、配置位置・Inspectorで変更した設定・外部スクリプトからの参照を控え、プロジェクトをバックアップします。VCCで対象プロジェクトの **Manage Project → Manage Packages** を開き、本パッケージに更新が表示されている場合は更新操作を行います。更新がなければ、そのまま使えます。更新後は、ワールド内の表示と操作を再確認してください。
 
 旧構造のPrefabから更新する場合は、参照や独自設定が自動で引き継がれないことがあります。配置メニューは、シーンに本体があると新しい本体を追加できません。バックアップと設定・参照の記録を済ませてから、次の順に移行してください。
 
@@ -89,6 +136,4 @@ permalink: /install/
 
 同梱フォントは現行UI向けです。独自の説明文やプレイヤー名を追加する場合は、必要な文字を含むフォントを用意してください。同梱音源を使う場合は、[第三者素材の通知とクレジット](https://github.com/aramaa-vr/player-carry-and-throw/blob/master/Third%20Party%20Notices.md)も確認してください。
 
-{% include contact.html %}
-
-<div class="action-row"><a class="primary" href="{{ '/play/' | relative_url }}">遊び方へ進む</a></div>
+<div class="action-row" id="contact"><a class="primary" href="{{ '/play/' | relative_url }}">遊び方へ進む</a><a href="{{ '/contact/' | relative_url }}">不具合・不明点のお問い合わせ</a></div>
