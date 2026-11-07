@@ -7,21 +7,22 @@ permalink: /
 ---
 
 <div class="hero">
-  <div class="hero__inner">
-    <div>
-      <div class="hero__eyebrow">VRCHAT WORLD GIMMICK</div>
-      <h1>だこちてギミック<br>【ワールド版】</h1>
+  <h1 class="hero__title">
+    <img src="{{ '/assets/img/manual-title-960.webp' | relative_url }}"
+         srcset="{{ '/assets/img/manual-title-640.webp' | relative_url }} 640w,
+                 {{ '/assets/img/manual-title-960.webp' | relative_url }} 960w,
+                 {{ '/assets/img/manual-title-1280.webp' | relative_url }} 1280w,
+                 {{ '/assets/img/manual-title.webp' | relative_url }} 1672w"
+         sizes="(min-width: 850px) 800px, 100vw"
+         alt="VRChat ワールド用ギミック だこちてギミック【ワールド版】説明書"
+         width="1672" height="941" fetchpriority="high" loading="eager">
+  </h1>
+  <div class="hero__content">
       <p>VRChatのワールドで<strong>抱っこ・組体操・投げ合い</strong>を楽しめるギミックです。アバターへの導入は必要ありません。</p>
       <div class="action-row">
         <a class="primary" href="{{ '/install/' | relative_url }}">ワールドに導入する</a>
         <a href="{{ '/play/' | relative_url }}">遊び方を見る</a>
       </div>
-    </div>
-    <div class="hero__art">
-      <img src="{{ '/assets/img/grab.webp' | relative_url }}" alt="抱っこのイラスト">
-      <img src="{{ '/assets/img/chain.webp' | relative_url }}" alt="組体操のイラスト">
-      <img src="{{ '/assets/img/throw.webp' | relative_url }}" alt="投げ合いのイラスト">
-    </div>
   </div>
 </div>
 

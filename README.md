@@ -6,6 +6,7 @@ GitHub Pages / Jekyll（just-the-docs）で公開する説明ページです。�
 
 ## 説明ページに使う画像
 
+- `docs/assets/img/manual-title*.webp` — トップのタイトル画像（ユーザー提供画像）。幅640・960・1280・1672pxのWebPを用意し、画面幅と画面の精細さに合わせて読み分けます。縦横比を保って全体を表示し、読み込み領域をあらかじめ確保します。
 - `docs/assets/img/vcc-manage-packages.webp` — VCCでパッケージ名を検索し、右端の「＋」で追加する画面
 - `docs/assets/img/discord-contact.webp` — Discordの問い合わせチャンネル（ユーザー提供画像）
 - `docs/assets/img/tmp-importer.webp` — TMP Essentialsの導入
